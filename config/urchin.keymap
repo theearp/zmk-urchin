@@ -55,7 +55,7 @@
 			label = "Base";
 			bindings = <
 			&kp Q &kp W &kp E &kp R &kp T                           &kp Y &kp U  &kp I     &kp O   &kp P 
-			&kp A &mt LALT S &mt LSHIFT D &mt LCTRL F &kp G         &kp H &mt RCTRL J  &mt RSHIFT K   &mt RALT &kp BACKSPACE
+			&kp A &mt LALT S &mt LSHIFT D &mt LCTRL F &kp G         &kp H &mt RCTRL J  &mt RSHIFT K &mt RALT L &kp BACKSPACE
 			&mt LGUI Z &kp X &kp C &kp V &kp B                      &kp N &kp M  &kp COMMA &kp DOT &kp SLASH
 			                 &lt MVMT ESC &lt SYM TAB           &lt MEDIA SPACE &lt FUNC RETURN 
 			>;
@@ -109,9 +109,9 @@
 		settings_layer {
 			label = "Sett";
 			bindings = <
-			&trans &trans &trans &trans &trans          &trans &trans &trans &trans &kp BT_PRV
+			&trans &trans &trans &trans &trans          &trans &trans &trans &trans &bt BT_PRV
             &trans &trans &trans &trans &trans          &trans &trans &trans &trans &trans
-            &trans &trans &kp BT_CLR &trans &trans          &kp BT_NEXT &trans &trans &trans &trans
+            &trans &trans &bt BT_CLR &trans &trans          &bt BT_NEXT &trans &trans &trans &trans
                                  &trans &trans          &trans &trans
 			>;
 		};
