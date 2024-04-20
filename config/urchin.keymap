@@ -16,7 +16,6 @@
 #define MVMT 2
 #define FUNC 3
 #define MEDIA 4
-#define SETNG 5
 // -----------------
 
 &sk {
@@ -73,7 +72,7 @@
 		};
 
 		// Movement layer
-		ext_layer {
+		mvmt_layer {
 			label = "mvmt";
 			bindings = <
 			&trans &trans &trans &trans &trans          &trans &mkp LCLK &mkp MCLK &mkp RCLK &trans
@@ -88,30 +87,19 @@
 			label = "funcs";
 			bindings = <
 			&kp F1 &kp F2 &kp F3 &kp F4 &kp F5          &kp F6 &kp F7 &kp F8 &kp F9 &kp F10
-            &trans &kp LC(LS(S)) &trans &kp LA(LS(F)) &trans         &kp LC(LS(LA(SQT))) &trans &trans &trans &trans
+            &trans &kp LC(LS(S)) &trans &kp LA(LS(F)) &trans         &kp LC(LS(LA(SQT))) &trans &trans &kp F11 &kp F12
             &kp LC(LS(Z)) &trans &trans &kp LC(LS(LA(V))) &trans          &trans &trans &trans &trans &trans
                                  &trans &trans          &trans &trans
 			>;
 		};
 
-		// Media control layer 
-		media_layer {
-			label = "media";
+		// Control layer (media/bt) 
+		ctrl_layer {
+			label = "ctrl";
 			bindings = <
 			&kp LA(Q) &kp LA(W) &trans &trans &trans          &trans &trans &trans &trans &kp C_PP
             &trans &trans &trans &trans &trans          &kp C_PREV &kp C_VOL_DN &kp C_VOL_UP &kp C_NEXT &trans
-            &trans &trans &trans &trans &trans          &trans &trans &trans &trans &trans
-                                 &trans &trans          &trans &trans
-			>;
-		};
-
-		// Used to change the keyboard's settings.
-		settings_layer {
-			label = "setng";
-			bindings = <
-			&trans &trans &trans &trans &trans          &trans &trans &trans &trans &bt BT_PRV
-            &trans &trans &trans &trans &trans          &trans &trans &trans &trans &trans
-            &trans &trans &bt BT_CLR &trans &trans      &bt BT_NXT &trans &trans &trans &trans
+            &trans &trans &bt BT_CLR &trans &trans          &trans &trans &bt BT_PRV &bt BT_NXT &trans
                                  &trans &trans          &trans &trans
 			>;
 		};
