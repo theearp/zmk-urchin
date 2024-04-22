@@ -18,16 +18,11 @@
 #define MEDIA 4
 // -----------------
 
-&sk {
-	// don't release mods on other mods presses
-	ignore-modifiers;
+&mt {
+    tapping-term-ms = <265>;
 };
 
-
 / {
-	&mt {
-        tapping-term-ms = <265>;
-    };
 
 	macros {
 	};
