@@ -25,11 +25,9 @@
 
 
 / {
-	behaviors {
-		&mt: mod_tap {
-            tapping-term-ms = <265>;
-        };
-	};
+	&mt: mod_tap {
+        tapping-term-ms = <265>;
+    };
 
 	macros {
 	};
