@@ -25,7 +25,7 @@
 
 
 / {
-	&mt: mod_tap {
+	&mt {
         tapping-term-ms = <265>;
     };
 
