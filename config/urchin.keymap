@@ -45,8 +45,8 @@
 			label = "base";
 			bindings = <
 			&kp Q &kp W &kp E &kp R &kp T                           &kp Y &kp U  &kp I     &kp O   &kp P 
-			&kp A &ht LALT S &ht LSHIFT D &ht LCTRL F &kp G         &kp H &ht RCTRL J  &ht RSHIFT K &ht RALT L &kp BACKSPACE
-			&ht LGUI Z &kp X &kp C &kp V &kp B                      &kp N &kp M  &kp COMMA &kp DOT &ht RGUI SLASH
+			&kp A &hm LALT S &hm LSHIFT D &hm LCTRL F &kp G         &kp H &hm RCTRL J  &hm RSHIFT K &hm RALT L &kp BACKSPACE
+			&hm LGUI Z &kp X &kp C &kp V &kp B                      &kp N &kp M  &kp COMMA &kp DOT &hm RGUI SLASH
 			                 &lt MVMT ESC &lt SYM TAB           &lt MEDIA SPACE &lt FUNC RETURN 
 			>;
 		};
