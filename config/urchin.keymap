@@ -18,11 +18,18 @@
 #define MEDIA 4
 // -----------------
 
-&mt {
-    tapping-term-ms = <260>;
-};
-
 / {
+
+    behaviors {
+        hm: homerow_mods {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping-term-ms = <150>;
+            quick-tap-ms = <0>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
+        };
+    };
 
 	macros {
 	};
@@ -38,8 +45,8 @@
 			label = "base";
 			bindings = <
 			&kp Q &kp W &kp E &kp R &kp T                           &kp Y &kp U  &kp I     &kp O   &kp P 
-			&kp A &mt LALT S &mt LSHIFT D &mt LCTRL F &kp G         &kp H &mt RCTRL J  &mt RSHIFT K &mt RALT L &kp BACKSPACE
-			&mt LGUI Z &kp X &kp C &kp V &kp B                      &kp N &kp M  &kp COMMA &kp DOT &kp SLASH
+			&kp A &ht LALT S &ht LSHIFT D &ht LCTRL F &kp G         &kp H &ht RCTRL J  &ht RSHIFT K &ht RALT L &kp BACKSPACE
+			&ht LGUI Z &kp X &kp C &kp V &kp B                      &kp N &kp M  &kp COMMA &kp DOT &ht RGUI SLASH
 			                 &lt MVMT ESC &lt SYM TAB           &lt MEDIA SPACE &lt FUNC RETURN 
 			>;
 		};
