@@ -79,7 +79,7 @@
 			bindings = <
 			&kp F1 &kp F2 &kp F3 &kp F4 &kp F5          &kp F6 &kp F7 &kp F8 &kp F9 &kp F10
             &trans &kp LC(LS(S)) &trans &kp LA(LS(F)) &trans         &kp LC(LS(LA(SQT))) &trans &trans &kp F11 &kp F12
-            &kp LC(LS(Z)) &trans &trans &kp LC(LS(LA(V))) &trans          &trans &trans &trans &trans &trans
+            &kp LC(LS(Z)) &trans &trans &kp LC(LS(LA(PERCENT))) &trans          &trans &trans &trans &trans &trans
                                  &trans &trans          &trans &trans
 			>;
 		};
